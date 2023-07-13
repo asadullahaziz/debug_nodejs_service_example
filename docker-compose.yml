@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  myapp:
+    build: myapp/
+    container_name: myapp
+    ports:
+      - $MYAPP_PORT:$MYAPP_PORT
+    environment:
+      - PORT=$MYAPP_PORT
