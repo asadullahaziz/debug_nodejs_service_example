@@ -4,6 +4,7 @@
   "description": "example project of how to debug a nodejs application running inside docker container",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Asad Ullah Aziz",
