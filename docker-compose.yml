@@ -9,6 +9,7 @@ services:
       - $MYAPP_PORT:$MYAPP_PORT
       - $DEBUG_MODE_PORT:$DEBUG_MODE_PORT
     environment:
-      - SERVICE_NAME=myapp
       - PORT=$MYAPP_PORT
+      - SERVICE_NAME=myapp
+      - DEBUG_MODE=$DEBUG_MODE
       - DEBUG_MODE_PORT=$DEBUG_MODE_PORT

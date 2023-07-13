@@ -9,3 +9,4 @@ else
     # Run Node.js noramlly
     echo "Starting server"
     npm start
+fi
