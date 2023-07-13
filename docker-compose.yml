@@ -4,7 +4,11 @@ services:
   myapp:
     build: myapp/
     container_name: myapp
+    command: sh ./docker-entrypoint.sh
     ports:
       - $MYAPP_PORT:$MYAPP_PORT
+      - $DEBUG_MODE_PORT:$DEBUG_MODE_PORT
     environment:
+      - SERVICE_NAME=myapp
       - PORT=$MYAPP_PORT
+      - DEBUG_MODE_PORT=$DEBUG_MODE_PORT

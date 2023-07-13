@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "debug": "node --inspect=0.0.0.0:$DEBUG_MODE_PORT --signal SIGINT --nolazy index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Asad Ullah Aziz",
